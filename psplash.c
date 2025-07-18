@@ -67,11 +67,11 @@ psplash_draw_progress (PSplashFB *fb, int value)
 {
   int x, y, width, height, barwidth;
 
-  /* 4 pix border */
-  x      = ((fb->width  - BAR_IMG_WIDTH)/2) + 4 ;
-  y      = SPLIT_LINE_POS(fb) + 4;
-  width  = BAR_IMG_WIDTH - 8; 
-  height = BAR_IMG_HEIGHT - 8;
+  /* 4+4 pix border/distance */
+  x      = ((fb->width  - BAR_IMG_WIDTH)/2) + 8 ;
+  y      = SPLIT_LINE_POS(fb) + 8;
+  width  = BAR_IMG_WIDTH - 16;
+  height = BAR_IMG_HEIGHT - 16;
 
   if (value > 0)
     {
