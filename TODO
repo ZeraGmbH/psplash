@@ -1,0 +1,3 @@
+* Move systemd service files in here (and don't forget to add 
+  'Before=display-manager.service' in psplash-start.service to avoid race
+  pssplash/display-manager
