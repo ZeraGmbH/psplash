@@ -1,3 +1,4 @@
-* Move systemd service files in here (and don't forget to add 
-  'Before=display-manager.service' in psplash-start.service to avoid race
-  pssplash/display-manager
+Move systemd service files in here from oe-core and meta-zera. Inspiration
+how this can be achieved (autotools...) is found in [1]
+
+[1] https://patchwork.ozlabs.org/project/buildroot/patch/20140521192928.GA3672@ned/
